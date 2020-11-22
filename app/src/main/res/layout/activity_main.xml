@@ -2,9 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <Space
         android:layout_width="0px"
@@ -25,7 +26,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:fontFamily="serif"
             android:onClick="button1Clicked"
             android:text="Button 1"
@@ -41,7 +42,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:fontFamily="serif"
             android:onClick="button2Clicked"
             android:text="Button 2"
@@ -57,7 +58,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:fontFamily="serif"
             android:onClick="button3Clicked"
             android:text="Button 3"
@@ -73,8 +74,9 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:fontFamily="serif"
+            android:onClick="button4Clicked"
             android:text="Button 4"
             android:textColor="#05092B"
             android:textSize="24sp"
@@ -88,7 +90,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:fontFamily="serif"
             android:text="Button 5"
             android:textColor="#05092B"
