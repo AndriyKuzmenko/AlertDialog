@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity
     {
         adb=new AlertDialog.Builder(this);
         adb.setTitle("Message");
-        adb.setMessage("This AlertDialog has a message, an image, and 3 buttons. Do you want to change the background color?");
+        adb.setMessage("This AlertDialog has a message, an image, and 2 buttons. Do you want to change the background color?");
         adb.setIcon(R.drawable.image);
         adb.setNegativeButton("Random Color", new DialogInterface.OnClickListener()
         {
@@ -157,6 +157,12 @@ public class MainActivity extends AppCompatActivity
         ad.show();
     }
 
+    /**
+     * This method creates a menu
+     * 
+     * @param menu
+     */
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
@@ -165,6 +171,12 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * This method starts credits activity.
+     * 
+     * @param item
+     */
+    
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
