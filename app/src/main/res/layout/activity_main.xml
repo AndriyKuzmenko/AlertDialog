@@ -59,6 +59,7 @@
             android:layout_height="0px"
             android:layout_weight="1"
             android:fontFamily="serif"
+            android:onClick="button3Clicked"
             android:text="Button 3"
             android:textColor="#05092B"
             android:textSize="24sp"
