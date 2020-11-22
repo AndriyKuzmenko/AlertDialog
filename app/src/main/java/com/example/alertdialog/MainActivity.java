@@ -77,7 +77,16 @@ public class MainActivity extends AppCompatActivity
                 layout.setBackgroundColor(rnd.nextInt());
             }
         });
+        adb.setNegativeButton("Close", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+
+            }
+        });
         AlertDialog ad=adb.create();
         ad.show();
     }
 }
+
