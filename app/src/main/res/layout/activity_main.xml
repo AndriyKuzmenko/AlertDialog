@@ -27,6 +27,7 @@
             android:layout_height="0px"
             android:layout_weight="1"
             android:fontFamily="serif"
+            android:onClick="button1Clicked"
             android:text="Button 1"
             android:textColor="#05092B"
             android:textSize="24sp"
