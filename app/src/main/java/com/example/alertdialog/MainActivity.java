@@ -25,4 +25,14 @@ public class MainActivity extends AppCompatActivity
         AlertDialog ad=adb.create();
         ad.show();
     }
+
+    public void button2Clicked(View view)
+    {
+        adb=new AlertDialog.Builder(this);
+        adb.setTitle("Message");
+        adb.setMessage("This AlertDialog has a message and an image");
+        adb.setIcon(R.drawable.image);
+        AlertDialog ad=adb.create();
+        ad.show();
+    }
 }
