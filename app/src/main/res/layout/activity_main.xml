@@ -92,6 +92,7 @@
             android:layout_height="0px"
             android:layout_weight="2"
             android:fontFamily="serif"
+            android:onClick="button5Clicked"
             android:text="Button 5"
             android:textColor="#05092B"
             android:textSize="24sp"
