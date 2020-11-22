@@ -1,9 +1,11 @@
 package com.example.alertdialog;
 
+import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -88,5 +90,38 @@ public class MainActivity extends AppCompatActivity
         AlertDialog ad=adb.create();
         ad.show();
     }
-}
 
+    public void button5Clicked(View view)
+    {
+        adb=new AlertDialog.Builder(this);
+        adb.setTitle("Message");
+        adb.setMessage("This AlertDialog has a message, an image, and 2 buttons. Do you want to change the background color?");
+        adb.setIcon(R.drawable.image);
+        adb.setPositiveButton("Random Color", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                layout.setBackgroundColor(rnd.nextInt());
+            }
+        });
+        adb.setNegativeButton("Close", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+
+            }
+        });
+        adb.setNeutralButton("White", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                layout.setBackgroundColor(Color.WHITE);
+            }
+        });
+        AlertDialog ad=adb.create();
+        ad.show();
+    }
+}
